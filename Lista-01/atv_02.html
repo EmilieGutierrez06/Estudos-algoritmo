@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2 - ATV2</title>
+</head>
+
+<body>
+    <h1>Calculadora de Peso e Altura </h1>
+    <h3>Insira seu peso:</h3>
+    <input type="number" id="input_peso">
+    <h3>Insira sua altura:</h3>
+    <input type="number" id="input_altura">
+    <button onclick="analisar()">Fale comigo</button>
+</body>
+
+</html>
+<script>
+    function analisar() {
+        var peso = input_peso.value;
+        var altura = input_altura.value;
+
+        alert(`Você pesa ${peso} kg e tem ${altura} m de altura`)
+    }
+</script>

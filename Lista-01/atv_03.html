@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2 - ATV3</title>
+</head>
+
+<body>
+    <h1>Futebol</h1>
+    <h3> inserir Nome do Time:</h3>
+    <input type="text" id="input_time">
+    <h3> inserir a Quantidade de Títulos que o clube possui:</h3>
+    <input type="text" id="input_titulos">
+    <button onclick="analisar()">Amo meu time</button>
+</body>
+
+</html>
+<script>
+    function analisar() {
+        var time = input_time.value;
+        var titulo = input_titulos.value;
+        alert(`O time ${time} tem ${titulo} títulos`);
+    }
+</script>

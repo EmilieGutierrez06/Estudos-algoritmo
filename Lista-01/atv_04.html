@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 2 - ATV4</title>
+</head>
+
+<body>
+    <h1>Onde Eu Moro</h1>
+    <h3>Inserir o Nome da Rua/Avenida/Vila</h3>
+    <input type="text" id="input_nomeRua">
+    <h3>Inserir o Número da Casa:</h3>
+    <input type="number" id="input_numeroCasa">
+    <br><br>
+    <button onclick="analisar()">Onde eu moro</button>
+
+</body>
+
+</html>
+
+<script>
+    function analisar() {
+        var rua = input_nomeRua.value;
+        var numeroCasa = input_numeroCasa.value;
+
+        alert(`Seu logradouro é ${rua}`);
+        alert(`O número do seu logradouro é ${numeroCasa}`);
+    }
+</script>
