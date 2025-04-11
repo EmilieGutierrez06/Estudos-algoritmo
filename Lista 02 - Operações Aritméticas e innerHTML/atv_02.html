@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV2</title>
+</head>
+
+<body>
+    <h1>Todo mundo adora pizza! Existem para todos os gostos!</h1>
+    <h3>Insira o valor da pizza:</h3>
+    <input type="number" id="input_valorPizza">
+    <h3>Insira quantidade de amigos:</h3>
+    <input type="number" id="input_amigos">
+    <br><br>
+    <button onclick="analisar()">LovePizza</button>
+    <br><br>
+</body>
+
+</html>
+<script>
+
+    function analisar() {
+
+        var valorPizza = Number(input_valorPizza.value);
+        var qtdAmigos = Number(input_amigos.value);
+        var valorDividido = valorPizza / qtdAmigos;
+
+        alert(`Cada um dos ${qtdAmigos} amigos vai pagar R$ ${valorDividido}`)
+    }
+
+</script>

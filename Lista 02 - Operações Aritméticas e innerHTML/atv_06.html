@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV6</title>
+</head>
+
+<body>
+
+    Insira um numero: <input type="text" id="input_num1"><br>
+    Insira um numero: <input type="text" id="input_num2"><br>
+
+    <button onclick="analisar()">calcular</button>
+    <div id="div_mensagem"></div>
+
+</body>
+
+</html>
+<script>
+    function analisar() {
+        var numero1 = Number(input_num1.value);
+        var numero2 = Number(input_num2.value);
+
+        div_mensagem.innerHTML = `- A soma entre ${numero1} e ${numero2} é ${numero1 + numero2} <br>
+   - A diferença entre ${numero1} e ${numero2} é ${numero1 - numero2} <br>
+   - O produto entre ${numero1} e ${numero2} é ${numero1 * numero2} <br>
+   - A razão entre ${numero1} e ${numero2} é ${numero1 / numero2} <br>`
+    }
+</script>
+
+<!-- 6. Crie um programa que:  
+a) Solicite 2 números ao usuário  
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir na página uma dessas frases:  
+   - A soma entre X e Y é Z  
+
+   - A diferença entre X e Y é Z  
+
+   - O produto entre X e Y é Z  
+
+   - A razão entre X e Y é Z          -->

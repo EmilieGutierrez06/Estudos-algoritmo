@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" countent="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV8</title>
+</head>
+<body>
+ Insira o Valor depositado? <input type="text" id="input_valorDepositado"><br>
+ Insira o Valor retirado? <input type="text" id="input_valorRetirado"><br><br>
+
+   <button onclick="Depositar()">Depositar</button><br>
+   <button onclick="Retirar()">Retirar</button>
+
+   <div id="div_mensagem"></div>
+
+</body>
+<script>
+
+    var saldo = 0;
+
+    function Depositar(){
+        var deposito = Number(input_valorDepositado.value);
+        saldo = saldo + deposito;
+        div_mensagem.innerHTML = `Depósito de R$ ${deposito} efetuado! Saldo atual: R$ ${saldo} `
+        
+    }
+
+    function Retirar(){
+        var retira = Number(input_valorRetirado.value);
+        saldo = saldo - retira;
+        div_mensagem.innerHTML = `Retirada de R$ ${retira} efetuado! Saldo atual: R$ ${saldo} `
+
+    }
+</script>
+
+<!-- 8. Crie um programa que:  
+
+a) Solicite o valor a ser depositado/retirado pelo usuário 
+b) Tenha os botões “Depositar” e “Retirar”. Ao clicar em algum deles, e
+xibe um alerta com uma das mensagens abaixo, de acordo com o botão que foi clicado:  
+   - Depósito de R$X efetuado! Saldo atual: R$Y 
+   - Retirada de R$X efetuada! Saldo atual: R$Y 
+OBS: o valor do saldo atual se inicia em 0, para depois ir reduzindo/incrementando de acordo com a operação realizada -->

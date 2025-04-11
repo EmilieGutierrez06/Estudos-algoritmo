@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV12</title>
+</head>
+
+<body>
+    Insira o sabor da Pizza: <input type="text" id="input_saborPizza"><br>
+    Insira o valor da Pizza: <input type="text" id="input_valor"><br>
+    Insira a quantidade de amigos: <input type="text" id="input_qtdAmigos">
+
+    <button onclick="analisar()">Ver valor por amigo</button>
+    <div id="div_mensagem"></div>
+
+</body>
+
+</html>
+<script>
+    function analisar(){
+        var sabor = input_saborPizza.value;
+        var preco = Number(input_valor.value);
+        var amigos = Number(input_qtdAmigos.value);
+        var precoComCaixinha = (preco*0.10)+preco;
+
+        div_mensagem.innerHTML = `Cada amigo vai colaborar com R$${precoComCaixinha/amigos} para a pizza de ${sabor}.`
+
+
+
+    }
+</script>
+
+<!-- 12. Todo mundo gosta de pizza! É um prato super democrático, pois existem sabores veganos, vegetarianos, sem glúten, 
+"low carb" (pouco carboidrato), doces etc.   
+Crie um programa o qual:  
+
+a) Solicite o sabor e o preço da pizza;  
+b) Solicite a quantidade de amigos que vão comer;  
+c) Ao clicar num botão "Ver valor por amigo", calcule e exiba na tela uma frase como esta:  
+    Cada amigo vai colaborar com R$X para a pizza de Y.  
+Obs: inclua no valor da pizza a caixinha do entregador que é sempre 10% do valor da pizza.  
+Obs²: Y é o sabor da pizza;   -->

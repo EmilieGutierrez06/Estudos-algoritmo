@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV3</title>
+</head>
+<body>
+
+    Qual o valor da passagem? <input id="input_valor" type="text">
+    <br><br>
+    Quantidade de viajens por mês? <input id="input_qtd" type="text">
+    <br><br>
+
+    <button onclick="calcular()">Ver economia</button>
+    <br><br>
+
+</body>
+</html>
+
+<script>
+
+    function calcular(){
+
+        var valor = Number(input_valor.value)
+        var qtd = Number(input_qtd.value)
+        var resultado = qtd * valor
+        alert("Você economizará R$ " + resultado/2 + " por mês.")
+    }
+
+</script>
+
+<!-- Um estudante recebeu o Bilhete Único de estudante pela primeira vez e deseja saber quanto vai economizar por mês. 
+O valor para estudante é metade do valor da passagem. Crie um programa que:  
+
+a) Pergunte a ele o valor da passagem  
+b) Pergunte a ele quantas viagens fará por mês  
+c) Ao clicar num botão "Ver economia", deve ver um alerta com uma frase como esta: "Você economizará R$X por mês"   -->

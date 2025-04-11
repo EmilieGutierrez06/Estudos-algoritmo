@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV5</title>
+</head>
+<body>
+    Insira seu nome? <input type="text" id="input_nome"><br>
+    Insira a nota da avaliação continuada? <input type="text" id="input_notaContinuada">
+    <br>
+    Insira a nota da avaliação semestral? <input type="text" name="" id="input_notaSemestral">
+    <br><br>
+    <button onclick="calcular()">calcular média</button>
+    <div id="div_mensagem"></div>
+    
+</body>
+</html>
+<script>
+    function calcular(){
+        var nome = input_nome.value;
+        var NotaC = Number(input_notaContinuada.value);
+        var NotaS = Number(input_notaSemestral.value);
+        var notaTotal = (NotaC*0.4) + (NotaS*0.6);
+
+       alert("A média de " + nome + " será de " + notaTotal);
+
+    }
+</script>
+
+<!-- 5. Na faculdade SPTech o aluno tem 2 notas: A da "avaliação continuada" e 
+a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". 
+Assim, para ajudar um aluno para saber o quanto precisa para passar de semestre e estagiar em empresas como C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa que:  
+
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"  
+b) Solicite o nome do aluno  
+c) Calcule sua média  
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". 
+Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c)  -->
+  

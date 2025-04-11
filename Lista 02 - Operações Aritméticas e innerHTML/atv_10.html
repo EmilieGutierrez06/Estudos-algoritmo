@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV10</title>
+</head>
+
+<body>
+    Insira a quantidade de votos do candidato A? <input type="text" id="input_candidatoA"><br>
+    Insira a quantidade de votos do candidato B? <input type="text" id="input_candidatoB"><br>
+    Insira a quantidade de votos brancos? <input type="text" id="input_votosBrancos"><br>
+    Insira a quantidade de votos nulos? <input type="text" id="input_votosNulos"><br>
+
+    <button onclick="analisar()">Resultado da eleição</button>
+    <div id="div_mensagem"></div>
+</body>
+
+</html>
+<script>
+    function analisar() {
+        var candidatoA = Number(input_candidatoA.value);
+        var candidatoB = Number(input_candidatoB.value);
+        var Brancos = Number(input_votosBrancos.value);
+        var Nulos = Number(input_votosNulos.value);
+        var total = candidatoA+candidatoB+Brancos+Nulos;
+
+    div_mensagem.innerHTML = `Total de votos: ${total}<br>
+    Candidato A: ${(candidatoA*100)/ total}% ( ${candidatoA} votos)  
+    Candidato B: ${(candidatoB*100)/total}% ( ${candidatoB} votos)
+    Inválidos: ${((Nulos+Brancos)*100)/total}% (${Nulos+Brancos} votos) `
+
+    }
+</script>
+
+<!-- 10. Crie um programa o qual:  
+
+a) Solicite a quantidade de votos que o "Candidato A" teve na eleição  
+b) Solicite a quantidade de votos que o "Candidato B" teve na eleição  
+c) Solicite a quantidade de votos brancos que houveram na eleição  
+d) Solicite a quantidade de votos nulos que houveram na eleição  
+e) Ao clicar em "Resultado da Eleição", exibir textos  conforme o exemplo abaixo:  
+    Total de votos: 200  
+    Candidato A: 40% (80 votos)  
+    Candidato B: 35% (70 votos)  
+    Inválidos: 25% (50 votos)  
+A quantidade de votos "Inválidos" é a soma de brancos e nulos - valores colhidos nos itens c) e 
+d) -  Não se preocupe em mostrar primeiro o "vencedor". Não temos como saber isso com o que aprendemos na programação até aqui ;)   
+Mostre os candidatos na ordem que quiser.   -->

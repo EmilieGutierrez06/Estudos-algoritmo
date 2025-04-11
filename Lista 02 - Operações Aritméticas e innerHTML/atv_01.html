@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 - ATV1</title>
+</head>
+
+<body>
+    <h1>INSS</h1>
+    <h3>Insira sua idade:</h3>
+    <input type="number" id="input_idade">
+    <br><br>
+    <button onclick="analisarHomem()">Aposentadoria Homem</button>
+    <button onclick="analisarMulher()">Aposentadoria Mulher</button>
+</body>
+
+</html>
+<script>
+    function analisarHomem(){
+        var idade = Number(input_idade.value);
+        var tempo = 70 - idade;
+
+        alert(`Faltam ${tempo} anos para voce se aposentar!`)
+
+    }
+
+    function analisarMulher(){
+        var idade = Number(input_idade.value);
+        var tempo = 60 - idade;
+
+        alert(`Faltam ${tempo} anos para voce se aposentar!`)
+        
+        }
+</script>
