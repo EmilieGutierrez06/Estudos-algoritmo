@@ -6,9 +6,25 @@
     <title>Lista 09 - ATV12</title>
 </head>
 <body>
-    
+    Informe do nome da pessoa que voce mais ama na vida: <input type="text" id="input_favorite"><br>
+    Insira um numero: <input type="text" id="input_numero"><br>
+    <button onclick="contar()">Expressar amor!</button>
+    <div id="div_mensagem"></div>
 </body>
 </html>
+
+<script>
+    function contar(){
+        var nome = input_favorite.value;
+        var numero = Number(input_numero.value);
+        var contador = 0;
+
+        while(contador<numero){
+            contador ++ ;
+            div_mensagem.innerHTML += `${nome}, eu te amo! Sempre lembre disso<br>`
+        }
+    }
+</script>
 
 <!-- 12. Expressar amor
 Crie um programa o qual:
@@ -17,7 +33,8 @@ a) Pergunte o nome da pessoa que o usuário mais ama na vida;
 
 b) Pergunte o quanto o usuário a ama (um número inteiro);  
 
-c) Ao clicar num botão "Expressar amor", devem aparecer, abaixo dele, N vezes (conforme o valor em b)) a frase indicada em a), como neste exemplo (considerando o nome "Lady Gaga" e que ama "3")   
+c) Ao clicar num botão "Expressar amor", devem aparecer, abaixo dele, N vezes (conforme o valor em b)) a frase indicada em a), 
+como neste exemplo (considerando o nome "Lady Gaga" e que ama "3")   
 
       1 - Lady Gaga, eu te amo! Sempre lembre disso!   
 
