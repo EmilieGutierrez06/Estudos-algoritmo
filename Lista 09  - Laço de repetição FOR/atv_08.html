@@ -6,6 +6,26 @@
     <title>ATV08</title>
 </head>
 <body>
-    
+    Insira um numero: <input type="text" id="input_numero"><br>
+    Insira uma frase : <input type="text" id="input_frase">
+    <button onclick="contar()">Papagaio</button>
+    <div id="div_mensagem"></div>
 </body>
 </html>
+<script>
+    function contar(){
+        var numero = Number(input_numero.value);
+        var frase = input_frase.value;
+
+        for(var count = 0; count < numero ; count++){
+            div_mensagem.innerHTML += `${frase}<br>`
+        }
+    }
+</script>
+
+<!-- 8. Papagaio Falante
+Crie um programa o qual:
+ 
+a) Pergunte ao usuário um número;  
+b) Pergunte ao usuário uma frase.  
+c) Ao clicar num botão "Papagaio", a frase é exibida N vezes em N alerts, onde N é o número informado em a)    -->
