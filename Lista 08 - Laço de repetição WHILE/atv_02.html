@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contar()">Diga algo sobre a materia de Algoritmo</button>
+    <div id="div_mensagem"></div>
+    
+</body>
+</html>
+
+<script>
+    function contar(){
+        var contador = 0;
+        var frase = "Materia Legal !"
+        div_mensagem.innerHTML = "";
+
+        while (contador < 7){
+            contador ++ ; 
+            div_mensagem.innerHTML += `${frase}<br>`
+
+        }
+    }
+
+</script>
+<!-- 2. Frase Repetitiva
+Crie um programa o qual: 
+a) Tenha um botão "Diga algo sobre a matéria de Algoritmos";  
+b) Ao clicar nele, mostre na própria página 7 vezes uma frase a sua escolha, uma abaixo da outra. -->

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contar()">Boa tarde</button>
+    <div id="div_mensagem"></div>
+    
+</body>
+</html>
+
+<script>
+    function contar(){
+        var contador = 0;
+        var frase = "Boa tarde!"
+        div_mensagem.innerHTML = "";
+
+        while (contador < 7){
+            contador ++ ;
+            div_mensagem.innerHTML += `${contador}. ${frase}<br>`
+        }
+    }
+</script>
+
+<!-- 3. Frase Numerada
+Refaça o programa anterior de tal forma que, antes de cada frase apareça um contador. 
+Ex: Se a frase digitada foi “Boa Tarde” a página ficará assim:   
+   1. Boa tarde   
+   2. Boa tarde   
+   ...   
+   7. Boa tarde   -->

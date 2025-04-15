@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira valor 1: <input type="text" id="input_num1">
+    Insira valor 2: <input type="text" id="input_num2">
+    <button onclick="contar()">S2 Pares</button>
+    <div id="div_mensagem"></div>
+    
+</body>
+</html>
+
+<script>
+    function contar(){
+        var num1 = Number(input_num1.value);
+        var num2 = Number(input_num2.value);
+        var contador = 0;
+
+        if(num1>num2){
+            alert("insira um valor minimo e maximo valido!")
+        }
+
+        while(contador<num2){
+            contador = contador + 2;
+            div_mensagem.innerHTML += `${contador}<br>`
+
+        }
+
+    }
+</script>
+<!-- 9. Pares no Intervalo  
+Crie um programa o qual:
+ 
+a) Solicite um intervalo crescente de valores numéricos    
+b) Ao clicar num botão "S2 Pares"...   
+c) Exiba, debaixo do botão, todos os números pares contidos no intervalo.   -->
