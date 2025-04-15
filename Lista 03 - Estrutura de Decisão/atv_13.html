@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - ATV13</title>
+</head>
+
+<body>
+    Insira nota : <input type="text" id="input_nota1"><br>
+    Insira nota : <input type="text" id="input_nota2"><br>
+    <button onclick="analisar()">Verificar situação</button>
+    <div id="div_mensagem"></div>
+</body>
+
+</html>
+<script>
+    function analisar(){
+        var nota1 = Number(input_nota1.value);
+        var nota2 = Number(input_nota2.value);
+        var media = (nota1 + nota2) / 2;
+
+        if (media>=6){
+            alert("parabens!! aprovado")
+        }else {
+            alert("Tente outra vez!")
+        }
+    }
+</script>
+<!-- 13. Crie um programa o qual:  
+
+a) Solicite 2 notas de um aluno  
+
+b) Ao clicar em "Verificar situação", calcule sua média e...  
+
+c) Caso a média seja a partir de 6, exiba um alert com "Parabéns, aprovado!"  
+
+d) Caso a média seja menor que 6, exiba um alert com "Tente outra vez..."   -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - ATV4</title>
+
+</head>
+
+<body>
+    <h1>Pizza</h1><br>
+    Valor: <input type="text" id="input_valor"><br><br>
+    n° pessoa: <input type="text" id="input_num"><br><br><br>
+    <button onclick="calcular()">Rola a pizza?</button><br><br>
+    <div id="div_mensagem"></div>
+</body>
+
+</html>
+<script>
+    function calcular() {
+        var valor = Number(input_valor.value);
+        var num = Number(input_num.value);
+        var cada = valor / num;
+        div_mensagem.innerHTML = `Cada amigo vai pagar R$${cada} pela pizza`;
+        if (cada > 20) {
+            div_mensagem.innerHTML += `<br><i> Deu ruim! Pizza muito cara!</i></b> `;
+        }
+    }
+</script>
+
+</html>
+
+<!-- 4. Um grupo de amigos costuma se reunir na casa de um deles para comer pizza. 
+Só que eles têm um trato de que o valor da pizza, quando dividido entre os amigos, 
+não deve passar de 20,00 por amigo. Ajude-os criando um programa o qual: 
+
+a) Pergunte o valor da pizza 
+b) Pergunte a quantidade de amigos reunidos 
+c) Ao clicar em "Rola a pizza?", calcule e exiba o valor que cada amigo vai pagar na pizza com uma frase na página como esta 
+"Cada amigo vai pagar R$X pela pizza" 
+d) Somente caso o valor por amigo passe de R$20,00, exiba também a frase "Deu ruim! Pizza muito cara!" -->

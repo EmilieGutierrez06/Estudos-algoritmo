@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - ATV11</title>
+</head>
+<body>
+    N° de Filhos: <input type="text" id="input_crianças"><br><br>
+    <button onclick="Analisar()">Analisar familia</button>
+    <div id="div_mensagem"></div>
+</body>
+    
+</html>
+
+<script>
+function Analisar(){
+        var crianças = Number(input_crianças.value);
+
+        if (crianças>=1){
+            div_mensagem.innerHTML = `Não tem TV`;
+        }
+        if (crianças>=2){
+            div_mensagem.innerHTML += `<br>Não tem internet`;
+        }
+        if (crianças>=3){
+            div_mensagem.innerHTML += `<br>Não tem video game`;
+        }
+        if (crianças>=4){
+            div_mensagem.innerHTML += `<br>Não tem Netflix`;
+        }}
+
+</script>
+
+<!-- 11. Crie um programa o qual:  
+
+a) Solicite a quantidade de filhos que o usuário tem  
+
+b) Tenha um botão "Analisar família". Ao clicar nele...  
+
+c) Caso tenha 1 ou mais filhos, exiba na tela, abaixo do botão, a frase "Não tem TV" 
+
+d) Caso tenha 2 ou mais filhos, exiba na tela, abaixo da frase em c), a frase "Não tem internet" 
+
+e) Caso tenha 3 ou mais filhos, exiba na tela, abaixo da frase em d), a frase "Não tem video game" 
+
+f) Caso tenha 4 ou mais filhos, exiba na tela, abaixo da frase em e), a frase "Não tem Netflix" 
+
+    OBS: Ou seja, caso o usuário informe que tenha, por exemplo,  4 ou mais filhos, devem aparecer as seguintes frases:  
+
+          Não tem TV  
+
+          Não tem internet  
+
+          Não tem video game  
+
+          Não tem Netflix  
+
+    Se tiver 2 filhos, deve exibir apenas "Não tem TV" e "Não tem internet", de acordo com as validações descritas acima. -->

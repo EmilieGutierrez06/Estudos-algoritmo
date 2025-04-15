@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - ATV14</title>
+</head>
+<body>
+    Insira seu nome? <input type="text" id="input_nome">
+    Insira sua idade? <input type="text" id="input_idade">
+    <button onclick="analisar()">Avaliar aluno</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        var nome = input_nome.value;
+        var idade = Number(input_idade.value);
+
+        if(idade>18){
+            div_mensagem.innerHTML = `${nome}, vamos tirar a CNH?`
+        }else{
+            div_mensagem.innerHTML = `${nome}, vai jogar PlayStation!`
+        }
+    }
+</script>
+
+<!-- 14. Criar um programa que auxilie uma Autoescola a identificar possíveis novos alunos. 
+
+a) Solicite o nome e a idade de uma pessoa 
+
+b) Ao clicar no botão "Avaliar aluno", se a pessoa tiver 18 anos ou mais emita a mensagem "NOME, vamos tirar a CNH?", 
+mas caso contrário, emita a mensagem "NOME, vai jogar PlayStation!"  -->
