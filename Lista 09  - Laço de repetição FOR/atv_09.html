@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atv09</title>
+</head>
+<body>
+    Valor minimo: <input type="text" id="input_min">
+    Valor max: <input type="text" id="input_max">
+    <button onclick="contar()">S2 Pares</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function contar(){
+        var max = Number(input_max.value);
+        var min = Number(input_min.value)
+
+        for(var count = 0 ; count < max ; count = count + 2){
+            div_mensagem.innerHTML += `${count}<br>`
+        }
+    }
+</script>
+<!-- 9. Pares no Intervalo  
+Crie um programa o qual:
+ 
+a) Solicite um intervalo crescente de valores numéricos    
+b) Ao clicar num botão "S2 Pares"...   
+c) Exiba, debaixo do botão, todos os números pares contidos no intervalo.   -->
