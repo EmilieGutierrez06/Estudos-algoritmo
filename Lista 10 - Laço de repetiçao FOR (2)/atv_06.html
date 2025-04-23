@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA 10 - ATV06</title>
+</head>
+<body>
+    Informe a quantidade de depositos: <input type="text" id="input_qtdDeposito"><br>
+    Informe o valor de cada deposito: <input type="text" id="input_valorDeposito"><br><br>
+    Insira o mes de bonus: <input type="text" id="input_bonus">
+    <button onclick="contar()">Acompanhar grana</button>
+    <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+    function contar(){
+        var qtdDepositos = Number(input_qtdDeposito.value);
+        var valorDeposito = Number(input_valorDeposito.value);
+        var mesBonus = Number(input_valorDeposito.value);
+        var total = 0;
+
+        for(var count = 1 ; count<=qtdDepositos ; count ++ ){
+            if(count == bonus){
+                div_mensagem
+            }
+            total+=valorDeposito;
+            div_mensagem.innerHTML +=` ${count}º Mes: R$: ${total}<br> `
+        }
+        div_mensagem.innerHTML += `Total guardado = R$${total}`;
+
+    }
+</script>
+
+<!-- Estrelas de Recompensa
+Refaça o programa anterior de tal forma de que:
+Somente nos meses que ganhou o "bônus", apareça uma 
+imagem de uma estrela bem pequena (reduza a imagem para ficar quase do tamanho da fonte) à direita do valor acumulado. -->
