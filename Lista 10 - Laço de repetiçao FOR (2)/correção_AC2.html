@@ -74,9 +74,22 @@
         var mensagem = "";
 
 
-        if (serviço == "#" || dia == "#" || horario == "#" || qtdAtendimentos =="") {
+        if (serviço == "#" || dia == "#" || horario == "#" || qtdAtendimentos == "") {
             div_resultado.innerHTML = `<b><br>Preencha todos os campos para prosseguir</b>`;
+            //outra alternativa de validação:
+            // if(serviço == "#" && dia == "#" && horario == "#" && qtdAtendimentos ==""){
+            // }else {
+            //     mensagem = "Preencha todos os campos";
+            // }
+        } else if
+            (serviço == "manicure" && (horario < 8 || horario > 16)) || 
+            ((horario < 13 || horario > 20) && serviço = "barba") {
+                mensagem = "o serviço selecionado não esta disponivel"
+
         }
+    }
+
+    div_resultado.innerHTML = mensagem;
 
 
 
@@ -102,23 +115,21 @@
 
 
 
+    var precoManicure = 20;
+    var desconto = 4;
+    var totalDesconto1 = precoManicure - desconto;
+
+    var precoBarba = 15;
+    var descontoBarba = 3;
+    var totalDesconto = precoBarba - descontoBarba;
+
+    var precoCabelo = 30;
+    var descontoCabelo = 5;
+    var totalDesconto = precoCabelo - descontoCabelo;
+
+    for (var count = 1; count <= qtdAtendimentos; count++) {
 
 
-        var precoManicure = 20;
-        var desconto = 4;
-        var totalDesconto1 = precoManicure - desconto;
-
-        var precoBarba = 15;
-        var descontoBarba = 3;
-        var totalDesconto = precoBarba - descontoBarba;
-
-        var precoCabelo = 30;
-        var descontoCabelo = 5;
-        var totalDesconto = precoCabelo - descontoCabelo;
-
-        for (var count = 1; count <= qtdAtendimentos; count++) {
-
-          
     }
     }
 
